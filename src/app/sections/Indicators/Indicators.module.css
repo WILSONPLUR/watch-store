@@ -23,6 +23,7 @@
 .pieChartTitle {
   font-size: 40px;
   font-weight: 400;
+  color: var(--black);
 }
 
 .pieChartDescription,
@@ -31,4 +32,5 @@
   font-weight: 400;
   font-family: "Inter", sans-serif;
   max-width: 820px;
+  color: var(--black);
 }
