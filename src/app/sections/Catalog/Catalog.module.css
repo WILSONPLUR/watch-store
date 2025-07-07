@@ -1,0 +1,43 @@
+.catalog {
+  background-color: var(--white);
+  min-height: 430px;
+  padding: 60px 0;
+}
+
+.catalogContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.catalogText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.catalogHeading {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.catalogCards {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1450px) {
+  .catalogCards {
+    max-width: 1300px;
+  }
+}

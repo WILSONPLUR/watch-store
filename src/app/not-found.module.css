@@ -1,0 +1,9 @@
+.notFound {
+  background: url("../../public/not-found/bg.jpg") no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.notFoundContent {
+  max-width: 1300px;
+}

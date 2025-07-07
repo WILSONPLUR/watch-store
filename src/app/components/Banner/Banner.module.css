@@ -1,0 +1,24 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1300px;
+  background-color: var(--white);
+  padding: 105px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08),
+    0 1.5px 6px 0 rgba(0, 0, 0, 0.04);
+}
+
+.bannerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+.bannerTitle {
+  font-size: 40px;
+  font-family: inherit;
+}

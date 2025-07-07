@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--background);
+  padding: 1rem 0;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footerLogo {
+  font-size: 24px !important;
+  color: var(--white);
+}
+
+.footerLink {
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.footerRightLinks {
+  display: flex;
+}
+
+.footerSupportWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

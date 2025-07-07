@@ -1,0 +1,35 @@
+.header {
+  background-color: var(--background);
+  padding: 1rem 0;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.headerLogo {
+  font-size: 24px !important;
+  color: var(--white);
+}
+
+.headerLink {
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.headerRightLinks {
+  display: flex;
+}
+
+.headerLangSwitchBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
