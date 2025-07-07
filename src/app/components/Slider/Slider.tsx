@@ -10,7 +10,7 @@ interface ISliderProps {
 const slidesView = 4;
 
 export const Slider = ({ items }: ISliderProps) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide] = useState(0);
 
   // Duplicate slides for infinite effect
   const extendedItems = [...items, ...items.slice(0, slidesView)];
