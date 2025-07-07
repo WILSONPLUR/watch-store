@@ -40,6 +40,7 @@ export const Contacts = () => {
             bgColor="#fff"
             color="#000"
             style={btnStyles}
+            classNames={styles.contactsBtn}
           >
             Відправити
           </Button>

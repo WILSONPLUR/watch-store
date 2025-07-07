@@ -76,6 +76,7 @@ export const Catalog = () => {
               variant="text"
               color="#000"
               style={btnStyles}
+              classNames={styles.catalogBtn}
               onClick={showMore}
             >
               {limit === 4 ? "Більше" : "Менше"}

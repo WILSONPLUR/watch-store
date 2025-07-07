@@ -19,7 +19,13 @@ export const Hero = () => {
               елегантність.
             </p>
           </div>
-          <Button variant="solid" color="#000" bgColor="#fff" style={btnStyles}>
+          <Button
+            variant="solid"
+            color="#000"
+            bgColor="#fff"
+            style={btnStyles}
+            classNames={styles.heroBtn}
+          >
             Каталог
           </Button>
         </div>

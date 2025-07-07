@@ -97,4 +97,28 @@
   .logo {
     font-size: 2rem;
   }
+
+  @media (max-width: 420px) {
+    .sliderContainer {
+      max-width: 351px;
+      margin: 0;
+      border-radius: 0;
+      padding: 30px 0;
+    }
+
+    .slide {
+      width: 293px !important;
+      height: 180px !important;
+    }
+
+    .slider {
+      height: 150px;
+      width: 351px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 2rem;
+    }
+  }
 }

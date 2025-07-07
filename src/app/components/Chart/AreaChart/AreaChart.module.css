@@ -30,3 +30,12 @@
   border-right: 8px solid transparent;
   border-top: 8px solid rgba(24, 35, 45, 1);
 }
+
+@media screen and (max-width: 420px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 351px;
+    padding: 5px;
+  }
+}

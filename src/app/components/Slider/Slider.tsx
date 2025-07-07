@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styles from "./Slider.module.css";
 
 interface ISliderProps {
@@ -14,13 +14,6 @@ export const Slider = ({ items }: ISliderProps) => {
 
   // Duplicate slides for infinite effect
   const extendedItems = [...items, ...items.slice(0, slidesView)];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1 >= items.length ? 0 : prev + 1));
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [items.length]);
 
   return (
     <div className={styles.sliderContainer}>

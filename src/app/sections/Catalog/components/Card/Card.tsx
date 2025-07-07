@@ -17,12 +17,16 @@ export const Card = ({ title, image, price }: ICardProps) => {
   return (
     <div className={styles.card}>
       <div className={styles.cardContent}>
-        <img src={image || CardMock.src} alt="card image" className="" />
+        <img
+          src={image || CardMock.src}
+          alt="card image"
+          className={styles.cardImg}
+        />
         <div className={styles.cardText}>
           <h3 className={styles.cardTitle}>{title}</h3>
           <span className={styles.cardPrice}>{price} грн</span>
         </div>
-        <Button variant="solid" style={btnStyles}>
+        <Button variant="solid" style={btnStyles} classNames={styles.cardBtn}>
           Купити
         </Button>
       </div>

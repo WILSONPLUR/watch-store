@@ -33,3 +33,29 @@
   align-items: center;
   gap: 5px;
 }
+
+@media screen and (max-width: 420px) {
+  .footerContainer {
+    flex-direction: column;
+    padding: 70px 0;
+  }
+
+  .footerLogo {
+    font-size: 32px !important;
+  }
+
+  .footerLink {
+    font-size: 20px;
+  }
+
+  .footerRightLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin: 20px 0;
+  }
+
+  .footerSupportWrapper {
+    padding-top: 40px;
+  }
+}

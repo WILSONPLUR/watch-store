@@ -27,6 +27,7 @@ export const Watch = () => {
               color="#000"
               bgColor="#fff"
               style={btnStyles}
+              classNames={styles.watchBtn}
             >
               Переглянути каталог
             </Button>

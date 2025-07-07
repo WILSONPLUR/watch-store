@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 100%;
   min-height: 551px;
 }
@@ -58,4 +59,62 @@
 .heroBtn {
   border-radius: 5px;
   padding: 10px 50px;
+}
+
+@media screen and (max-width: 420px) {
+  .hero {
+    min-height: 797px;
+  }
+  .heroLeft {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroText {
+    margin-bottom: 30px;
+    max-width: 323px;
+  }
+
+  .heroTitle {
+    font-size: 32px;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .heroRight {
+    position: absolute;
+    bottom: 5%;
+    right: -20px;
+    z-index: 1;
+  }
+
+  .heroImg {
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+  }
+
+  .heroBtn {
+    width: 80% !important;
+    font-size: 24px;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkblack);
+    opacity: 0.7;
+    z-index: 2;
+  }
 }
