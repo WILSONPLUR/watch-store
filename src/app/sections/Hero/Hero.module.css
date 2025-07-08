@@ -118,3 +118,38 @@
     z-index: 2;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .heroContent {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .heroImg {
+    width: 460px;
+  }
+  .heroLeft {
+    width: 45%;
+    z-index: 3;
+  }
+  .heroTitle {
+    font-size: 40px;
+  }
+  .heroText {
+    font-size: 16px;
+  }
+
+  .heroSubtitle {
+    max-width: 100%;
+  }
+
+  .heroRight {
+    width: 55%;
+  }
+
+  .heroBtn {
+    width: 100%;
+    font-size: 20px !important;
+  }
+}

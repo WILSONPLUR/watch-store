@@ -82,3 +82,37 @@
     max-width: 323px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .about {
+    min-height: 310px;
+  }
+  .aboutContainer {
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutLine {
+    right: 0;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .aboutText {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .aboutHeading {
+    /* margin-top: 40px; */
+    font-size: 32px;
+  }
+
+  .aboutDescription {
+    font-size: 16px;
+  }
+}

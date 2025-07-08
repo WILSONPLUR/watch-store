@@ -55,3 +55,21 @@
     font-size: 24px !important;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .catalogContainer {
+    max-width: 100%;
+    width: 768px;
+  }
+  .catalogCards {
+    width: 768px;
+  }
+  .catalogHeading {
+    font-size: 40px;
+    margin-left: 14px;
+  }
+
+  .catalogBtn {
+    font-size: 24px !important;
+  }
+}

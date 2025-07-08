@@ -60,3 +60,22 @@
     font-size: 32px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .topBrands {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    width: 768px;
+  }
+  .topBrandsContainer {
+    align-items: flex-start;
+    width: 768px;
+
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .topBrandsHeading {
+    font-size: 40px;
+  }
+}

@@ -34,7 +34,7 @@ export const Footer = () => {
           <nav>
             <Link
               href="/contacts"
-              className={styles.footerLink}
+              className={styles.footerLink + " " + styles.footerContactsLink}
               prefetch={false}
             >
               Контакти

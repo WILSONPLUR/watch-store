@@ -24,6 +24,10 @@
   text-decoration: none;
 }
 
+.footerContactsLink {
+  display: flex;
+}
+
 .footerRightLinks {
   display: flex;
 }
@@ -57,5 +61,29 @@
 
   .footerSupportWrapper {
     padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footerContainer {
+    padding: 10px 20px;
+  }
+
+  .footerLogo {
+    font-size: 24px !important;
+  }
+
+  .footerLink {
+    font-size: 16px;
+  }
+
+  .footerContactsLink {
+    display: none;
+  }
+
+  .footerRightLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 }

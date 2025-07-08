@@ -4,6 +4,7 @@
   align-items: center;
   margin: 0 auto;
   max-width: 1300px;
+  border-radius: 5px;
   background-color: var(--white);
   padding: 105px;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08),
@@ -32,5 +33,17 @@
 
   .bannerTitle {
     font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner {
+    max-width: 730px;
+    height: 280px;
+    width: 100%;
+  }
+
+  .bannerTitle {
+    font-size: 40px;
   }
 }
