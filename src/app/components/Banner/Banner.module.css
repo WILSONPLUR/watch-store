@@ -64,3 +64,15 @@
     font-size: 32px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .banner {
+    max-width: 730px;
+    height: 280px;
+    width: 100%;
+  }
+
+  .bannerTitle {
+    font-size: 40px;
+  }
+}
