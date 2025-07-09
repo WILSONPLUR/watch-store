@@ -55,13 +55,13 @@
 
 @media screen and (max-width: 420px) {
   .banner {
-    max-width: 351px;
-    height: 424px;
-    width: 100%;
+    max-width: 351px !important;
+    height: 424px !important;
+    width: 100% !important;
   }
 
   .bannerTitle {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 }
 
@@ -73,6 +73,6 @@
   }
 
   .bannerTitle {
-    font-size: 40px;
+    font-size: 40px !important;
   }
 }

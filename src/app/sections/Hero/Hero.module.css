@@ -178,18 +178,21 @@
   .hero {
     min-height: 797px;
   }
+  .heroContent {
+    width: 100%;
+  }
   .heroLeft {
     flex-direction: column;
     align-items: center;
     text-align: center;
     z-index: 5;
-    width: 100%;
+    width: 100% !important;
     justify-content: center;
   }
 
   .heroText {
     margin-bottom: 30px;
-    max-width: 323px;
+    max-width: 363px;
   }
 
   .heroTitle {
@@ -215,8 +218,9 @@
   }
 
   .heroBtn {
-    width: 80% !important;
     font-size: 24px;
+    width: 80% !important;
+    padding: 10px 20px;
   }
 
   .hero::after {

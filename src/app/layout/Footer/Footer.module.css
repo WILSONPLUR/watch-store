@@ -64,8 +64,8 @@
 }
 @media (max-width: 420px) {
   .footerContainer {
-    flex-direction: column;
-    padding: 70px 0;
+    flex-direction: column !important;
+    padding: 70px 0 !important;
   }
 
   .footerLogo {

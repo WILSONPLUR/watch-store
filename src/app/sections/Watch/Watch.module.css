@@ -232,6 +232,7 @@
   }
   .watchContent {
     max-width: 526px;
+    margin: 0 auto;
     align-items: flex-start;
     padding: 0 20px;
   }
@@ -244,7 +245,7 @@
   }
 
   .watchHeading {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     font-size: 40px;
   }
@@ -262,9 +263,9 @@
 
   .watchLeft {
     z-index: 12;
-    max-width: 100%;
-    width: 100%;
-    align-items: flex-start;
+    max-width: 100% !important;
+    width: 100% !important;
+    align-items: center;
     justify-content: center;
     height: 100%;
   }
@@ -272,6 +273,9 @@
   .watchImg {
     height: 350px;
     width: 360px;
+    position: absolute;
+    bottom: 0;
+    right: -70px;
     object-fit: cover;
   }
 
@@ -279,7 +283,7 @@
     width: 80% !important;
     font-size: 20px !important;
     padding: 13px 10px !important;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   /* .watch::after {
