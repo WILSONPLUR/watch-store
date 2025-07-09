@@ -53,19 +53,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
-  .banner {
-    max-width: 351px !important;
-    height: 424px !important;
-    width: 100% !important;
-  }
-
-  .bannerTitle {
-    font-size: 32px !important;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media (max-width: 834px) {
   .banner {
     max-width: 730px;
     height: 280px;
@@ -73,6 +61,17 @@
   }
 
   .bannerTitle {
-    font-size: 40px !important;
+    font-size: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .banner {
+    max-width: 351px;
+    height: 424px;
+    width: 100%;
+  }
+
+  .bannerTitle {
+    font-size: 32px;
   }
 }

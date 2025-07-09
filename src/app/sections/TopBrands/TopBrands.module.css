@@ -98,3 +98,19 @@
     font-size: 40px;
   }
 }
+
+@media (max-width: 420px) {
+  .topBrands {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .topBrandsContainer {
+    max-width: 100%;
+    width: 375px;
+    align-items: center;
+  }
+
+  .topBrandsHeading {
+    font-size: 32px;
+  }
+}

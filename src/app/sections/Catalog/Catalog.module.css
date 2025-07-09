@@ -109,6 +109,23 @@
   }
 
   .catalogBtn {
-    font-size: 24px !important;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .catalogContainer {
+    max-width: 100%;
+    width: 370px;
+  }
+  .catalogCards {
+    width: 370px;
+  }
+  .catalogHeading {
+    font-size: 32px;
+  }
+
+  .catalogBtn {
+    font-size: 24px;
   }
 }

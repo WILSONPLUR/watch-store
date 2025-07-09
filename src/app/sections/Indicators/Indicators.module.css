@@ -85,30 +85,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
-  .indicatorsContainer {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    max-width: 100%;
-    width: 100% !important;
-  }
-  .pieChartTitle {
-    font-size: 32px !important;
-  }
-  .indicatorsText {
-    max-width: 350px !important;
-    flex-direction: column;
-    align-items: center !important;
-    justify-content: center;
-  }
-  .pieChartDescription,
-  .pieChartSubtext {
-    font-size: 16px !important;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media (max-width: 834px) {
   .indicatorsContainer {
     align-items: center;
     gap: 10px;
@@ -123,6 +100,29 @@
     max-width: 400px;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+  }
+  .pieChartDescription,
+  .pieChartSubtext {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .indicatorsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .pieChartTitle {
+    font-size: 32px;
+  }
+  .indicatorsText {
+    max-width: 350px;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
   .pieChartDescription,

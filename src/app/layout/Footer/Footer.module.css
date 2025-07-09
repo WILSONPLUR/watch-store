@@ -64,8 +64,7 @@
 }
 @media (max-width: 420px) {
   .footerContainer {
-    flex-direction: column !important;
-    padding: 70px 0 !important;
+    padding: 10px 20px;
   }
 
   .footerLogo {
@@ -85,29 +84,5 @@
 
   .footerSupportWrapper {
     padding-top: 40px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .footerContainer {
-    padding: 10px 20px;
-  }
-
-  .footerLogo {
-    font-size: 24px !important;
-  }
-
-  .footerLink {
-    font-size: 16px;
-  }
-
-  .footerContactsLink {
-    display: none;
-  }
-
-  .footerRightLinks {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
   }
 }

@@ -63,7 +63,20 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100% !important;
-    padding: 5px 30px;
+    width: 800px;
+    padding: 5px 5px;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .chart {
+    width: 851px;
+    height: 751px;
   }
 }
