@@ -13,9 +13,8 @@ import { useContext } from "react";
 export default function Home() {
   const { menuOpened, setMenuOpened } = useContext(MainContext);
   const handleOpening = () => {
-    setMenuOpened(!menuOpened);
+    setMenuOpened(true);
   };
-
   return (
     <>
       <Hero />
