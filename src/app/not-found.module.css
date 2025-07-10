@@ -1,0 +1,58 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.notFoundContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  height: 100vh;
+}
+
+.notFoundWatchIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 20;
+}
+
+.notFoundWatchIcon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 0.2;
+  z-index: 30;
+}
+
+.notFoundText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 40;
+}
+
+.notFoundTitle {
+  font-size: 90px;
+  font-family: inherit;
+  color: var(--white);
+  text-align: center;
+}
+
+.notFoundDescription {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+}

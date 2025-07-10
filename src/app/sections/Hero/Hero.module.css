@@ -1,0 +1,175 @@
+.hero {
+  background-color: var(--darkblack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 551px;
+}
+
+.heroContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 1300px;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.heroRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.heroRightMenu {
+  width: 500px;
+  margin-right: 280px;
+}
+
+.heroImg {
+  width: 481px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 60px;
+}
+
+.heroTitle {
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.heroSubtitle {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  max-width: 490px;
+  color: var(--white);
+}
+
+.heroBtn {
+  padding: 0.5rem 5rem;
+  border-radius: 5px;
+}
+
+.heroBtn:hover {
+  box-shadow: 2px 3px 20px 0px rgba(250, 250, 250, 0.72);
+  -webkit-box-shadow: 2px 3px 20px 0px rgba(250, 250, 250, 0.72);
+  -moz-box-shadow: 2px 3px 20px 0px rgba(250, 250, 250, 0.72);
+}
+
+@media (max-width: 834px) {
+  .heroContent {
+    width: 100% !important;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .heroImg {
+    width: 430px;
+  }
+  .heroLeft {
+    width: 45%;
+    z-index: 3;
+  }
+  .heroTitle {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+  .heroText {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .heroRight {
+    width: 55%;
+  }
+
+  .heroBtn {
+    width: 100% !important;
+    font-size: 20px !important;
+    padding: 15px 20px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    min-height: 797px;
+  }
+  .heroContent {
+    width: 100%;
+  }
+  .heroLeft {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroText {
+    margin-bottom: 30px;
+    max-width: 363px;
+  }
+
+  .heroTitle {
+    font-size: 32px;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .heroRight {
+    position: absolute;
+    bottom: 5%;
+    right: -20px;
+    z-index: 1;
+  }
+
+  .heroImg {
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+  }
+
+  .heroBtn {
+    font-size: 24px;
+    width: 90% !important;
+    padding: 9px 5px;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkblack);
+    opacity: 0.7;
+    z-index: 2;
+  }
+}
