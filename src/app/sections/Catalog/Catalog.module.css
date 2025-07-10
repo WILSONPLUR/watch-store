@@ -53,8 +53,8 @@
   margin: 0 auto;
 }
 
-/* Media Queries */
-@media (max-width: 1450px) {
+/* Media Queries(Responsive mode) */
+@media (max-width: 1440px) {
   .catalogCards {
     max-width: 1300px;
   }
