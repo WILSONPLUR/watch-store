@@ -111,6 +111,18 @@
   }
 }
 
+.cardBtn {
+  width: 100%;
+  font-size: 16px !important;
+  padding: 10px 20px !important;
+}
+
+.cardBtn:hover {
+  background-color: var(--white) !important;
+  outline: 1px solid var(--black) !important;
+  color: var(--black) !important;
+}
+
 @media (max-width: 834px) {
   .card {
     width: 350px;
