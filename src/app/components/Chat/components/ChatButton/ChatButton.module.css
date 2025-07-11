@@ -26,7 +26,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 834px) {
+@media (max-width: 835px) {
   .chatButton {
     width: 100px;
     right: -20px;

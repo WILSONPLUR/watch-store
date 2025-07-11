@@ -35,7 +35,7 @@
   border-top: 8px solid rgba(24, 35, 45, 1);
 }
 
-@media (max-width: 834px) {
+@media (max-width: 835px) {
   .container {
     display: flex;
     justify-content: flex-start;

@@ -40,7 +40,7 @@
   gap: 5px;
 }
 
-@media (max-width: 834px) {
+@media (max-width: 835px) {
   .footerContainer {
     padding: 10px 20px;
   }

@@ -51,7 +51,7 @@
   z-index: 90;
 }
 
-@media (max-width: 834px) {
+@media (max-width: 835px) {
   .fixedHeader {
     position: fixed;
     top: 0;

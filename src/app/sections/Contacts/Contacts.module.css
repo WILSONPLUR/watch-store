@@ -91,7 +91,7 @@
   -moz-box-shadow: 2px 3px 20px 0px rgba(250, 250, 250, 0.72);
 }
 
-@media (max-width: 834px) {
+@media (max-width: 835px) {
   .contacts {
     max-width: 100%;
     border-radius: 10px;
