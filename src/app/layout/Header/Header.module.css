@@ -1,7 +1,7 @@
 .header {
   background-color: var(--background);
   padding: 1rem 0;
-  z-index: 73;
+  z-index: 78;
   position: relative;
 }
 
@@ -48,6 +48,7 @@
   transform: translateY(100%);
   opacity: 0;
   pointer-events: none;
+  z-index: 90;
 }
 
 @media (max-width: 834px) {
