@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import MockWatch from "../../../../public/catalog-section/mock.jpg";
 import { ArrowLeftDark } from "../../../../public/icons";
 import { Button } from "@/app/components/Button/Button";
+import Link from "next/link";
 import PieChart from "@/app/components/Chart/PieChart/PieChart";
 import { CustomAreaChart } from "@/app/components/Chart/AreaChart/AreaChart";
 
@@ -13,9 +14,9 @@ const Product = () => {
   return (
     <div className={styles.product}>
       <div className={styles.productContainer}>
-        <div className={styles.productBreadcrumbs}>
+        <div className={styles.productBreadcrumbs} onClick={back}>
           <img src={ArrowLeftDark.src} alt="back to page" />
-          <button onClick={back}>Назад</button>
+          <button>Назад</button>
         </div>
         <div className={styles.productContent}>
           <div className={styles.productLeft}>
@@ -57,12 +58,61 @@ const Product = () => {
               <h3 className={styles.productGraphTitle}>Графік цін</h3>
             </div>
             <div className={styles.productGraphSection}>
-              <CustomAreaChart />
-              <PieChart />
+              <div className={styles.productGraphLeft}>
+                <div className={styles.productGraphChart}>
+                  <CustomAreaChart
+                    containerClassName={styles.productChartContainer}
+                  />
+                  <div className={styles.productGraphButtons}>
+                    <Button
+                      variant="solid"
+                      classNames={styles.productGraphSwitchBtn}
+                    >
+                      1 рік
+                    </Button>
+                    <Button
+                      variant="solid"
+                      classNames={styles.productGraphSwitchBtn}
+                    >
+                      3 міс.
+                    </Button>
+                  </div>
+                </div>
+
+                <Button
+                  variant="text"
+                  color="#000"
+                  classNames={styles.productPDFBtn}
+                >
+                  <Link href="#">Завантажити PDF-гайд</Link>
+                </Button>
+              </div>
+              <div className={styles.productGraphRight}>
+                <p className={styles.productGraphSubtext}>
+                  Продуктивність моделі: 80%
+                </p>
+                <PieChart />
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <section className={styles.aiAgent}>
+        <div className={styles.aiAgentContainer}>
+          <h3 className={styles.aiAgentTitle}>АІ агент</h3>
+          <p className={styles.aiAgentDesc}>
+            Швидко, точно та без нав’язливих порад. Просто запитайте.
+          </p>
+          <Button
+            variant="solid"
+            color="#000"
+            bgColor="#fff"
+            classNames={styles.aiAgentBtn}
+          >
+            <Link href="/chat">Перейти в чат</Link>
+          </Button>
+        </div>
+      </section>
     </div>
   );
 };

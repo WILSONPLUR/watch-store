@@ -55,11 +55,21 @@ const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
   return null;
 };
 
-export const CustomAreaChart = () => {
+export const CustomAreaChart = ({
+  containerClassName,
+}: {
+  containerClassName?: string;
+}) => {
   const { menuOpened } = useContext(MainContext);
   return (
     <div
-      className={styles.container + " " + (menuOpened && styles.containerMenu)}
+      className={
+        styles.container +
+        " " +
+        containerClassName +
+        " " +
+        (menuOpened && styles.containerMenu)
+      }
     >
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
