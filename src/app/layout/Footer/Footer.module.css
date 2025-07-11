@@ -64,6 +64,9 @@
 }
 @media (max-width: 420px) {
   .footerContainer {
+    display: flex;
+    flex-direction: column;
+
     padding: 10px 20px;
   }
 

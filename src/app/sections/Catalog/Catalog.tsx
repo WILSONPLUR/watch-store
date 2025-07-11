@@ -15,42 +15,49 @@ export const Catalog = () => {
       title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
       image: MockWatch.src,
       price: 19500,
+      slug: "rolex-submariner-1",
       id: 1,
     },
     {
       title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
       image: MockWatch.src,
       price: 19500,
+      slug: "rolex-submariner-2",
       id: 2,
     },
     {
       title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
       image: MockWatch.src,
       price: 19500,
+      slug: "rolex-submariner-3",
       id: 3,
     },
     {
       title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
       image: MockWatch.src,
       price: 19500,
+      slug: "rolex-submariner-4",
       id: 4,
     },
     {
       title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
       image: MockWatch.src,
       price: 19500,
+      slug: "rolex-submariner-5",
       id: 5,
     },
     {
       title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
       image: MockWatch.src,
       price: 19500,
+      slug: "/rolex-submariner-6",
       id: 6,
     },
     {
       title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
       image: MockWatch.src,
       price: 19500,
+      slug: "/rolex-submariner-7",
       id: 7,
     },
   ];
@@ -75,9 +82,17 @@ export const Catalog = () => {
             <div className={styles.catalogText}>
               <h2 className={styles.catalogHeading}>Каталог</h2>
               <div className={styles.catalogCards}>
-                {mockData.slice(0, limit).map(({ id, title, image, price }) => (
-                  <Card key={id} title={title} image={image} price={price} />
-                ))}
+                {mockData
+                  .slice(0, limit)
+                  .map(({ id, title, image, price, slug }) => (
+                    <Card
+                      key={id}
+                      title={title}
+                      image={image}
+                      price={price}
+                      slug={slug}
+                    />
+                  ))}
               </div>
               <Button
                 variant="text"
