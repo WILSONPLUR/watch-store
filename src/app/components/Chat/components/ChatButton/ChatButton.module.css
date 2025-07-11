@@ -47,5 +47,6 @@
   .chatButton {
     width: 100px;
     right: -20px;
+    top: 75%;
   }
 }
