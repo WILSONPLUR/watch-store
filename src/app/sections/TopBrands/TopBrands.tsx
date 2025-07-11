@@ -13,6 +13,9 @@ const brands = [
   { name: "TAG Heuer", logo: TagHeuer.src, id: 4 },
   { name: "TAG Heuer", logo: TagHeuer.src, id: 5 },
   { name: "TAG Heuer", logo: TagHeuer.src, id: 6 },
+  { name: "TAG Heuer", logo: TagHeuer.src, id: 7 },
+  { name: "TAG Heuer", logo: TagHeuer.src, id: 8 },
+  { name: "TAG Heuer", logo: TagHeuer.src, id: 9 },
 ];
 
 export const TopBrands = () => {

@@ -4,7 +4,6 @@
   margin: 0 auto;
   position: relative;
   background: transparent;
-  border-radius: 12px;
   overflow: hidden;
   margin: 3rem 0;
 }
@@ -15,9 +14,25 @@
 
 .slider {
   position: relative;
-  width: 100%;
+  width: 1300px;
   height: 200px;
   overflow: hidden;
+  overflow-x: scroll;
+}
+
+.sliderMenu {
+  width: 100%;
+}
+
+.slider::-webkit-scrollbar {
+  background: transparent;
+  border: 1px solid var(--black);
+  border-radius: 9px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background-color: rgba(24, 35, 45, 1);
+  border-radius: 9px;
 }
 
 .slidesWrapper {
