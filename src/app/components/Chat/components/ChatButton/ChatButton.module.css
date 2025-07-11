@@ -37,6 +37,7 @@
   .chatWrapper {
     background-color: transparent;
     box-shadow: unset;
+    width: 0;
   }
 
   .chatButton {

@@ -102,6 +102,11 @@
 }
 
 /* Responsive design */
+@media (max-width: 1920px) {
+  .sliderMenuContainer {
+    width: calc(100vw - 850px);
+  }
+}
 @media (max-width: 768px) {
   .sliderContainer {
     max-width: 100%;
