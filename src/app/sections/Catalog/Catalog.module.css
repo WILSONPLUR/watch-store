@@ -54,13 +54,27 @@
 }
 
 /* Media Queries(Responsive mode) */
+@media (max-width: 1920px) {
+  .catalogMenuContainer {
+    max-width: calc(100vw - 770px);
+    margin-left: 300px;
+  }
+  .catalogMenuContainer .catalogContent {
+    max-width: calc(100vw - 370px);
+    /* margin: 0 auto; */
+  }
+
+  .catalogMenuContainer .catalogBtn {
+    margin-left: 340px;
+  }
+}
 @media (max-width: 1440px) {
   .catalogCards {
     max-width: 1300px;
   }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 835px) {
   .catalogContainer {
     max-width: 100%;
     width: 768px;

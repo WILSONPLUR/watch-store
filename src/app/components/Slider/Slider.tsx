@@ -25,7 +25,7 @@ export const Slider = ({ items }: ISliderProps) => {
         (menuOpened && styles.sliderMenuContainer)
       }
     >
-      <div className={styles.slider}>
+      <div className={styles.slider + " " + (menuOpened && styles.sliderMenu)}>
         <div
           className={styles.slidesWrapper}
           style={{
@@ -48,14 +48,14 @@ export const Slider = ({ items }: ISliderProps) => {
           })}
         </div>
       </div>
-      <div className={styles.progressBar}>
+      {/* <div className={styles.progressBar}>
         <div
           className={styles.progressFill}
           style={{
             width: `${((currentSlide + 1) / items.length) * 100}%`,
           }}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -28,13 +28,46 @@ export const AiChat = ({ type }: IAiChat) => {
   };
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setMessages([...messages, message]);
+    setMessages([
+      ...messages,
+      message,
+      {
+        content:
+          "Тоді кварцовий — чудовий вибір: точний, не потребує щоденного обслуговування. Ще питання: ви надаєте перевагу шкіряним ремінцям, металевим браслетам чи можливо щось нестандартне?",
+        by: "ai",
+        id: messages.length + 1 + Math.random() * 1000,
+      },
+    ]);
     setMessage({
       content: "",
       by: "me",
       id: messages.length + 1 + Math.random() * 1000,
     });
     if (type === "general") push(`/chat/${id}`);
+  };
+
+  const onClickOnInlineBtn = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+
+    const target = e.currentTarget;
+    if (!target.textContent) return;
+
+    const aiResponse =
+      "Тоді кварцовий — чудовий вибір: точний, не потребує щоденного обслуговування. Ще питання: ви надаєте перевагу шкіряним ремінцям, металевим браслетам чи можливо щось нестандартне?";
+
+    setMessages([
+      ...messages,
+      {
+        content: target.textContent,
+        by: "me",
+        id: Date.now() + Math.random(),
+      },
+      {
+        content: aiResponse,
+        by: "ai",
+        id: Date.now() + Math.random() + 1,
+      },
+    ]);
   };
 
   return (
@@ -104,16 +137,32 @@ export const AiChat = ({ type }: IAiChat) => {
         <div className={styles.chatFooter}>
           <h4 className={styles.chatFooterTitle}>Що я можу для Вас зробити?</h4>
           <div className={styles.chatFooterButtons}>
-            <Button variant="outline" classNames={styles.chatFooterBtn}>
+            <Button
+              variant="outline"
+              classNames={styles.chatFooterBtn}
+              onClick={onClickOnInlineBtn}
+            >
               Підібрати годинник
             </Button>
-            <Button variant="outline" classNames={styles.chatFooterBtn}>
+            <Button
+              variant="outline"
+              classNames={styles.chatFooterBtn}
+              onClick={onClickOnInlineBtn}
+            >
               Порівняти моделі
             </Button>
-            <Button variant="outline" classNames={styles.chatFooterBtn}>
+            <Button
+              variant="outline"
+              classNames={styles.chatFooterBtn}
+              onClick={onClickOnInlineBtn}
+            >
               Показати хіти продажу
             </Button>
-            <Button variant="outline" classNames={styles.chatFooterBtn}>
+            <Button
+              variant="outline"
+              classNames={styles.chatFooterBtn}
+              onClick={onClickOnInlineBtn}
+            >
               Обрати подарунок
             </Button>
           </div>

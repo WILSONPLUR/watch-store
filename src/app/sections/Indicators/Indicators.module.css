@@ -39,7 +39,13 @@
   color: var(--black);
 }
 
-@media (max-width: 834px) {
+@media (max-width: 1920px) {
+  .indicatorsMenuContainer {
+    width: calc(100vw - 850px);
+  }
+}
+
+@media (max-width: 835px) {
   .indicatorsContainer {
     align-items: center;
     gap: 10px;
@@ -85,7 +91,7 @@
   }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 835px) {
   .indicatorsContainer {
     align-items: center;
     gap: 10px;

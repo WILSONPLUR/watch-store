@@ -1,4 +1,4 @@
-import React from "react";
+import React, { RefObject } from "react";
 import styles from "./Button.module.css";
 
 interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -7,6 +7,7 @@ interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   bgColor?: string;
   color?: string;
   classNames?: string;
+  ref?: RefObject<HTMLButtonElement | null>;
 }
 
 export const Button = ({
@@ -15,6 +16,7 @@ export const Button = ({
   bgColor = "#000",
   color = "#fff",
   classNames,
+  ref,
   ...props
 }: IButton) => {
   let variantClass = styles.solid;
@@ -37,6 +39,7 @@ export const Button = ({
     <button
       {...props}
       className={`${styles.btn} ${variantClass} ${classNames || ""}`.trim()}
+      ref={ref}
       style={style && props.style ? { ...style, ...props.style } : style}
     >
       {children}
