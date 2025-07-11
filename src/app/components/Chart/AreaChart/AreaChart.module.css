@@ -46,7 +46,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 800px;
+    width: 760px;
     padding: 5px 5px;
   }
 }
@@ -61,16 +61,6 @@
   .chart {
     width: 851px;
     height: 751px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 800px;
-    padding: 5px 5px;
   }
 }
 @media (max-width: 420px) {
