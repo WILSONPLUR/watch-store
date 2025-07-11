@@ -1,0 +1,97 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.productContainer {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.productBreadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.productContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productLeft,
+.productRight {
+  width: 50%;
+}
+
+.productRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.productText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.productTitle {
+  font-size: 36px;
+  font-family: inherit;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.productDesc {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.productImg {
+  width: 641px;
+  height: 347px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.productPrice {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.productPriceBtn {
+  width: 60% !important;
+  padding: 15px 15px !important;
+}
+
+.productPriceText {
+  font-size: 40px;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.productGraph {
+  margin-top: 37px;
+}
+
+.productGraphSection {
+  display: flex;
+  margin-top: 30px;
+}
+
+.productGraphTitle {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: inherit;
+}

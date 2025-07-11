@@ -8,5 +8,6 @@ export { default as Menu } from "./menu.svg";
 export { default as Close } from "./close.svg";
 export { default as Robot } from "./robot.svg";
 export { default as ArrowLeft } from "./arrow-left.svg";
+export { default as ArrowLeftDark } from "./arrow-left-dark.svg";
 export { default as Send } from "./send.svg";
 //Add more icons in future

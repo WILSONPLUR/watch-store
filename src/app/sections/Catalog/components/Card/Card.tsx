@@ -1,15 +1,17 @@
 import React from "react";
 import CardMock from "../../../../../../public/catalog-section/mock.jpg";
 import styles from "./Card.module.css";
+import Link from "next/link";
 import { Button } from "@/app/components/Button/Button";
 
 interface ICardProps {
   title: string;
   image: string;
   price: string | number;
+  slug: string;
 }
 
-export const Card = ({ title, image, price }: ICardProps) => {
+export const Card = ({ title, image, price, slug }: ICardProps) => {
   return (
     <div className={styles.card}>
       <div className={styles.cardContent}>
@@ -23,7 +25,7 @@ export const Card = ({ title, image, price }: ICardProps) => {
           <span className={styles.cardPrice}>{price} грн</span>
         </div>
         <Button variant="solid" classNames={styles.cardBtn}>
-          Купити
+          <Link href={`/product/${slug}`}>Купити</Link>
         </Button>
       </div>
     </div>
