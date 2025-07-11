@@ -27,11 +27,6 @@
 }
 
 @media (max-width: 834px) {
-  .chatWrapper {
-    background-color: transparent;
-    box-shadow: unset;
-  }
-
   .chatButton {
     width: 100px;
     right: -20px;
