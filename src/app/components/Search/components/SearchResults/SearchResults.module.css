@@ -6,3 +6,7 @@
   gap: 30px;
   flex-wrap: wrap;
 }
+
+.searchMenuResults {
+  width: 1100px;
+}

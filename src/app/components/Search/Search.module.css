@@ -6,12 +6,21 @@
   align-items: baseline;
 }
 
+.searchMenu {
+  width: 1100px;
+}
+
 .catalogSearch {
   display: flex;
   justify-content: center;
   gap: 20px;
   width: 95%;
   margin: 30px 0;
+}
+
+.catalogSearchMenu {
+  justify-content: flex-start;
+  width: 75%;
 }
 
 .catalogSearchWrapper {

@@ -15,11 +15,29 @@ const Catalog = () => {
   return (
     <>
       <section className={styles.catalog}>
-        <div className={styles.catalogContainer}>
-          <div className={styles.catalogContent}>
+        <div
+          className={
+            styles.catalogContainer +
+            " " +
+            (menuOpened && styles.catalogMenuContainer)
+          }
+        >
+          <div
+            className={
+              styles.catalogContent +
+              " " +
+              (menuOpened && styles.catalogMenuContent)
+            }
+          >
             <div className={styles.catalogText}>
               <h1 className={styles.catalogTitle}>Каталог</h1>
-              <p className={styles.catalogSubtitle}>
+              <p
+                className={
+                  styles.catalogSubtitle +
+                  " " +
+                  (menuOpened && styles.catalogMenuSubtitle)
+                }
+              >
                 Інтернет-магазин годинників, де стиль зустрічається з точністю.
                 Ми пропонуємо широкий вибір чоловічих, жіночих та дитячих
                 годинників{" "}

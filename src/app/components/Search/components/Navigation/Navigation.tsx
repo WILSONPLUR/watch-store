@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ArrowLeftGrey, ArrowRightGrey } from "../../../../../../public/icons";
 import styles from "./Navigation.module.css";
+import { MainContext } from "@/app/context";
 
 interface NavigationProps {
   totalPages: number;
@@ -14,6 +15,7 @@ const Navigation: React.FC<NavigationProps> = ({
   onPageChange,
 }) => {
   const [currentPage, setCurrentPage] = useState(initialPage);
+  const { menuOpened } = useContext(MainContext);
 
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
@@ -59,7 +61,11 @@ const Navigation: React.FC<NavigationProps> = ({
   };
 
   return (
-    <nav className={styles.navigation}>
+    <nav
+      className={
+        styles.navigation + " " + (menuOpened && styles.navigationMenu)
+      }
+    >
       <button
         className={`${styles.arrow} ${
           currentPage === 1 ? styles.disabled : ""
