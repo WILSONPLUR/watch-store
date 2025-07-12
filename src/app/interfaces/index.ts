@@ -13,4 +13,18 @@ interface IMainContext {
   messages: Array<Message>;
 }
 
-export type { Message, IMainContext };
+interface IWatch {
+  title: string;
+  image: string;
+  price: number;
+  slug: string;
+  id: number;
+}
+
+interface ISearchProps extends React.HTMLAttributes<HTMLInputElement> {
+  type: "catalog";
+  classNames?: string;
+  searchList: IWatch[];
+}
+
+export type { Message, IMainContext, IWatch, ISearchProps };
