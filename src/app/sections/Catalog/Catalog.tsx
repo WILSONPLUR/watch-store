@@ -6,11 +6,12 @@ import { Card } from "./components/Card/Card";
 import { Button } from "@/app/components/Button/Button";
 import { Banner } from "@/app/components/Banner/Banner";
 import { MainContext } from "@/app/context";
+import { IWatch } from "@/app/interfaces";
 
 export const Catalog = () => {
   const { menuOpened } = useContext(MainContext);
   const [limit, setLimit] = useState<number>(4);
-  const mockData = [
+  const mockData: IWatch[] = [
     {
       title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
       image: MockWatch.src,
@@ -70,7 +71,7 @@ export const Catalog = () => {
   };
   return (
     <>
-      <section id="about" className={styles.catalog}>
+      <section id="catalog" className={styles.catalog}>
         <div
           className={
             styles.catalogContainer +
