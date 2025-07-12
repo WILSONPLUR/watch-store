@@ -53,19 +53,43 @@
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 1920px) {
+  .navigationMenu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .navigationMenu {
+    width: 800px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 835px) {
   .navigation {
     gap: 4px;
+    justify-content: center;
   }
 
   .arrow,
   .pageNumber {
     width: 36px;
     height: 36px;
-    font-size: 14px;
+    font-size: 24px;
   }
 
   .pageNumbers {
-    margin: 0 4px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .navigation {
+    gap: 2px;
+  }
+
+  .pageNumber {
+    font-size: 24px;
   }
 }

@@ -23,15 +23,29 @@ export const Search = ({
       const result = searchList.filter((item) =>
         item.title.includes(e.target.value)
       );
-      if (result) {
+      if (result.length > 0) {
         setSearchResults([...result]);
-      } else {
+        return;
+      }
+      if (searchVal === "") {
         setSearchResults(mockData);
+        return;
+      }
+      if (result.length === 0) {
+        setSearchResults([]);
+        return;
       }
     }, 2000);
   };
   return (
-    <div className={styles.search + " " + (menuOpened && styles.searchMenu)}>
+    <div
+      className={
+        styles.search +
+        " " +
+        (menuOpened && styles.searchMenu) +
+        (!searchResults && styles.searchNoResults)
+      }
+    >
       {type === "catalog" && (
         <div
           className={
@@ -45,6 +59,7 @@ export const Search = ({
               type="text"
               value={searchVal}
               className={styles.catalogSearchInput + " " + classNames}
+              placeholder="Пошук"
               onChange={handleSearch}
               {...props}
             />
@@ -66,7 +81,9 @@ export const Search = ({
         </div>
       )}
       <SearchResults items={searchResults} />
-      <Navigation totalPages={3} initialPage={1} />
+      {searchResults.length > 0 && (
+        <Navigation totalPages={3} initialPage={1} />
+      )}
     </div>
   );
 };
