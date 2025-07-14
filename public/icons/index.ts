@@ -25,4 +25,5 @@ export { default as DownloadIcon } from "./download.svg";
 export { default as BoxDarkIcon } from "./box-dark.svg";
 export { default as DocDark } from "./doc-dark.svg";
 export { default as DocsDark } from "./docs-dark.svg";
+export { default as SessionDark } from "./session-dark.svg";
 //Add more icons in future
