@@ -4,6 +4,7 @@ import { Watch as WatchBg } from "../../../../public/watch-section";
 import styles from "./Watch.module.css";
 import { Button } from "@/app/components/Button/Button";
 import { MainContext } from "@/app/context";
+import Link from "next/link";
 
 export const Watch = () => {
   const { menuOpened } = useContext(MainContext);
@@ -21,14 +22,16 @@ export const Watch = () => {
                 — у кожній деталі.
               </p>
             </div>
-            <Button
-              variant="solid"
-              color="#000"
-              bgColor="#fff"
-              classNames={styles.watchBtn}
-            >
-              Переглянути каталог
-            </Button>
+            <Link href="/catalog" prefetch={false}>
+              <Button
+                variant="solid"
+                color="#000"
+                bgColor="#fff"
+                classNames={styles.watchBtn}
+              >
+                Переглянути каталог
+              </Button>
+            </Link>
           </div>
           <div
             className={

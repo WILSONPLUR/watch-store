@@ -12,6 +12,7 @@ import {
 import styles from "./AreaChart.module.css";
 import { useContext } from "react";
 import { MainContext } from "@/app/context";
+import { Button } from "../../Button/Button";
 
 const data = [
   { date: "01/01/2020", value: 1200 },
@@ -57,20 +58,32 @@ const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
 
 export const CustomAreaChart = ({
   containerClassName,
+  controls,
 }: {
   containerClassName?: string;
+  controls?: boolean;
 }) => {
   const { menuOpened } = useContext(MainContext);
   return (
     <div
       className={
-        styles.container +
+        (controls ? styles.containerControls : styles.container) +
         " " +
         containerClassName +
         " " +
         (menuOpened && styles.containerMenu)
       }
     >
+      {controls && (
+        <div className={styles.controlButtons}>
+          <Button variant="solid" classNames={styles.controlBtn}>
+            1 рік
+          </Button>
+          <Button variant="solid" classNames={styles.controlBtn}>
+            3 міс.
+          </Button>
+        </div>
+      )}
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           data={data}

@@ -70,6 +70,7 @@ const Product = () => {
                   <div className={styles.productGraphChart}>
                     <CustomAreaChart
                       containerClassName={styles.productChartContainer}
+                      controls={true}
                     />
                     <div className={styles.productGraphButtons}>
                       <Button
@@ -111,14 +112,16 @@ const Product = () => {
             <p className={styles.aiAgentDesc}>
               Швидко, точно та без нав’язливих порад. Просто запитайте.
             </p>
-            <Button
-              variant="solid"
-              color="#000"
-              bgColor="#fff"
-              classNames={styles.aiAgentBtn}
-            >
-              <Link href="/chat">Перейти в чат</Link>
-            </Button>
+            <Link href="/chat" prefetch={false} className={styles.aiAgentLink}>
+              <Button
+                variant="solid"
+                color="#000"
+                bgColor="#fff"
+                classNames={styles.aiAgentBtn}
+              >
+                Перейти в чат
+              </Button>
+            </Link>
           </div>
         </section>
       </div>

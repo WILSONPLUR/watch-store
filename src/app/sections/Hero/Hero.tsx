@@ -2,6 +2,7 @@
 import React, { useContext } from "react";
 import { Watch } from "../../../../public/hero-section";
 import styles from "./Hero.module.css";
+import Link from "next/link";
 import { Button } from "@/app/components/Button/Button";
 import { MainContext } from "@/app/context";
 
@@ -18,14 +19,16 @@ export const Hero = () => {
               елегантність.
             </p>
           </div>
-          <Button
-            variant="solid"
-            color="#000"
-            bgColor="#fff"
-            classNames={styles.heroBtn}
-          >
-            Каталог
-          </Button>
+          <Link href="/catalog" className={styles.heroLink}>
+            <Button
+              variant="solid"
+              color="#000"
+              bgColor="#fff"
+              classNames={styles.heroBtn}
+            >
+              Каталог
+            </Button>
+          </Link>
         </div>
         <div
           className={
