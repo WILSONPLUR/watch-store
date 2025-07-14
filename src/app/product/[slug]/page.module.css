@@ -231,11 +231,16 @@
   z-index: 60;
 }
 
+.aiAgentLink,
+.aiAgentBtn {
+  z-index: 60;
+  width: 440px;
+}
+
 .aiAgentBtn {
   font-family: 20px;
-  width: 440px;
+  background-color: aliceblue;
   padding: 15px 15px !important;
-  z-index: 60;
 }
 
 .aiAgentBtn:hover {
