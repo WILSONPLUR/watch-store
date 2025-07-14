@@ -56,6 +56,12 @@
   gap: 30px;
 }
 
+.durationCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .tableCell:first-child {
   font-weight: 500;
 }

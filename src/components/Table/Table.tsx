@@ -52,7 +52,21 @@ export const Table: React.FC<TableProps> = ({ columns, data }) => {
                     </>
                   ) : (
                     <td key={col} className={styles.tableCell}>
-                      {row[col]}
+                      {col === "Тривалість" ? (
+                        <div className={styles.durationCell}>
+                          {row[col]}
+                          <div className={styles.actionButtons}>
+                            <button
+                              className={styles.downloadButton}
+                              title="Завантажити"
+                            >
+                              <img src={DownloadIcon.src} alt="download icon" />
+                            </button>
+                          </div>
+                        </div>
+                      ) : (
+                        <> {row[col]}</>
+                      )}
                     </td>
                   )}
                 </>
