@@ -3,7 +3,7 @@ import styles from "./Button.module.css";
 
 interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant: "solid" | "outline" | "text";
+  variant: "solid" | "outline" | "text" | "link";
   bgColor?: string;
   color?: string;
   classNames?: string;
@@ -33,6 +33,8 @@ export const Button = ({
       border: "none",
       boxShadow: "none",
     };
+  } else if (variant === "link") {
+    return;
   }
 
   return (
