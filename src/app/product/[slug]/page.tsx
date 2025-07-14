@@ -24,7 +24,7 @@ const Product = () => {
         <div className={styles.productContainer}>
           <div className={styles.productBreadcrumbs} onClick={back}>
             <img src={ArrowLeftDark.src} alt="back to page" />
-            <button>Назад</button>
+            Назад
           </div>
           <div className={styles.productContent}>
             <div className={styles.productLeft}>
