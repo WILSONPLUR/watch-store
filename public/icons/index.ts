@@ -14,4 +14,15 @@ export { default as ArrowRightGrey } from "./arrow-right-grey.svg";
 export { default as Send } from "./send.svg";
 export { default as Filter } from "./filter.svg";
 export { default as Search } from "./search.svg";
+export { default as BoxIcon } from "./box.svg";
+export { default as DocIcon } from "./doc.svg";
+export { default as DocsIcon } from "./docs.svg";
+export { default as SettingsIcon } from "./settings.svg";
+export { default as MonetizeIcon } from "./monetize.svg";
+export { default as HistoryIcon } from "./history.svg";
+export { default as EditIcon } from "./edit.svg";
+export { default as DownloadIcon } from "./download.svg";
+export { default as BoxDarkIcon } from "./box-dark.svg";
+export { default as DocDark } from "./doc-dark.svg";
+export { default as DocsDark } from "./docs-dark.svg";
 //Add more icons in future

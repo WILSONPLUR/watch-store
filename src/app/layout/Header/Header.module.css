@@ -16,6 +16,14 @@
 .headerLogo {
   font-size: 24px;
   color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.headerLogo:hover {
+  text-shadow: 0 0 10px rgba(250, 250, 250, 0.8);
 }
 
 .headerLink {
@@ -24,6 +32,14 @@
   font-size: 1.25rem;
   margin: 0 1rem;
   text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  position: relative;
+}
+
+.headerLink:hover {
+  text-shadow: 0 0 8px rgba(250, 250, 250, 0.6);
 }
 
 .headerRightLinks {
@@ -35,6 +51,11 @@
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.headerLangSwitchIcon:hover {
+  filter: drop-shadow(0 0 10px rgba(250, 250, 250, 0.8));
+  -webkit-filter: drop-shadow(0 0 10px rgba(250, 250, 250, 0.8));
 }
 
 .headerMobileMenuBtn,
@@ -99,6 +120,14 @@
     font-size: 24px;
     font-family: "Inter", sans-serif;
     color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+  }
+
+  .headerMobileMenuLink:hover {
+    text-shadow: 0 0 10px rgba(250, 250, 250, 0.8);
   }
   .headerMobileMenuBtn {
     display: flex;
@@ -169,6 +198,14 @@
     font-size: 24px;
     font-family: "Inter", sans-serif;
     color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+  }
+
+  .headerMobileMenuLink:hover {
+    text-shadow: 0 0 10px rgba(250, 250, 250, 0.8);
   }
   .headerMobileMenuBtn {
     display: flex;

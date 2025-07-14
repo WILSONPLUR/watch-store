@@ -97,14 +97,11 @@
 .productGraphChart {
   position: relative;
   width: 100%;
+  height: 428px;
 }
 
 .productGraphButtons {
-  position: absolute;
-  display: flex;
-  gap: 10px;
-  top: 10px;
-  left: 10px;
+  display: none;
 }
 
 .productGraphSwitchBtn {
@@ -234,11 +231,16 @@
   z-index: 60;
 }
 
+.aiAgentLink,
+.aiAgentBtn {
+  z-index: 60;
+  width: 440px;
+}
+
 .aiAgentBtn {
   font-family: 20px;
-  width: 440px;
+  background-color: aliceblue;
   padding: 15px 15px !important;
-  z-index: 60;
 }
 
 .aiAgentBtn:hover {
@@ -256,6 +258,9 @@
   }
 
   .productGraphButtons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     position: unset;
     margin-bottom: 20px;
   }
