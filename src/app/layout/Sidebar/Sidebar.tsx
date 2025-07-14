@@ -63,23 +63,25 @@ export const Sidebar = () => {
           </div>
           Налаштування
         </Link>
-        <Link href="/admin/monetization" className={styles.navLink}>
-          <div className={styles.icon}>
-            <Image
-              src={MonetizeIcon.src}
-              alt="monetize icon"
-              width={30}
-              height={30}
-            />
+        <div className={styles.monetizeWrapper}>
+          <Link href="/admin/monetization" className={styles.navLink}>
+            <div className={styles.icon}>
+              <Image
+                src={MonetizeIcon.src}
+                alt="monetize icon"
+                width={30}
+                height={30}
+              />
+            </div>
+            Monetization
+          </Link>
+          <div className={styles.switchWrapper}>
+            <button className={styles.switchButton} onClick={toggleSwitch}>
+              <span className={isOn ? styles.switchOn : styles.switchOff}>
+                {isOn ? "ON" : "OFF"}
+              </span>
+            </button>
           </div>
-          Monetization
-        </Link>
-        <div className={styles.switchWrapper}>
-          <button className={styles.switchButton} onClick={toggleSwitch}>
-            <span className={isOn ? styles.switchOn : styles.switchOff}>
-              {isOn ? "ON" : "OFF"}
-            </span>
-          </button>
         </div>
       </nav>
     </aside>
