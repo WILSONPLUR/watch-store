@@ -23,6 +23,15 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .searchResults {
+    width: 1100px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}
+
 @media (max-width: 420px) {
   .searchResults {
     width: 100%;

@@ -29,7 +29,7 @@ export const Table: React.FC<TableProps> = ({ columns, data }) => {
                   col === "Опис" ||
                   col === "Останнє використання" ? (
                     <>
-                      <td key={col} className={styles.tableCell}>
+                      <td key={col + index} className={styles.tableCell}>
                         <div className={styles.quantityCell}>
                           {row[col]}
                           <div className={styles.actionButtons}>
