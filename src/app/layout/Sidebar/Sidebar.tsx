@@ -11,6 +11,7 @@ import {
   HistoryIcon,
 } from "../../../../public/icons";
 import Image from "next/image";
+import { Switch } from "@/app/components/Switch";
 
 export const Sidebar = () => {
   const [isOn, setIsOn] = useState(true);
@@ -64,7 +65,7 @@ export const Sidebar = () => {
           Налаштування
         </Link>
         <div className={styles.monetizeWrapper}>
-          <Link href="/admin/monetization" className={styles.navLink}>
+          <div className={styles.navItem}>
             <div className={styles.icon}>
               <Image
                 src={MonetizeIcon.src}
@@ -74,14 +75,20 @@ export const Sidebar = () => {
               />
             </div>
             Monetization
-          </Link>
-          <div className={styles.switchWrapper}>
+          </div>
+          {/* <div className={styles.switchWrapper}>
             <button className={styles.switchButton} onClick={toggleSwitch}>
-              <span className={isOn ? styles.switchOn : styles.switchOff}>
-                {isOn ? "ON" : "OFF"}
+              <span className={isOn ? styles.switchOnActive : styles.switchOn}>
+                {"ON"}
+              </span>
+              <span
+                className={isOn ? styles.switchOff : styles.switchOffActive}
+              >
+                {"OFF"}
               </span>
             </button>
-          </div>
+          </div> */}
+          <Switch isOn={isOn} onToggle={toggleSwitch} />
         </div>
       </nav>
     </aside>

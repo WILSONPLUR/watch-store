@@ -2,7 +2,7 @@
   position: relative;
   background-color: var(--background);
   padding: 1rem 0;
-  z-index: 83;
+  z-index: 90;
 }
 
 .footerContainer {

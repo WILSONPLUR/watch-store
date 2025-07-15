@@ -1,5 +1,4 @@
 import { AdminLayout } from "@/app/layout/AdminLayout/AdminLayout";
-import { ProductsTable } from "@/components/ProductsTable/ProductsTable";
 import styles from "../admin.module.css";
 import React from "react";
 import { SettingsDark } from "../../../../public/icons";

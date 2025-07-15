@@ -66,6 +66,9 @@
 }
 
 @media (max-width: 1920px) {
+  .catalogSearch {
+    align-items: center;
+  }
   .catalogSearchMenu {
     width: 95%;
   }
@@ -74,6 +77,13 @@
 @media (max-width: 1440px) {
   .catalogSearchMenu {
     width: 62%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .catalogSearch {
+    width: 82%;
+    margin: 30px auto;
   }
 }
 
