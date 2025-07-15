@@ -5,8 +5,45 @@
 .dashboardContainer {
   display: flex;
   justify-content: flex-start;
-  max-width: 857px;
+  max-width: calc(100vw - 1000px);
   margin: 0 auto;
+}
+
+.dashboardButtons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 10px;
+  max-width: 880px;
+  padding-top: 33px;
+}
+
+.dashboardButton {
+  width: 50%;
+  max-width: 419px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboardButton:hover {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+}
+
+.dashboardTitleSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding-top: 31px;
+  max-width: 857px;
+}
+
+.dashboardTitle {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--black);
 }
 
 .title {
