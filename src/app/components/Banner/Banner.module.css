@@ -37,6 +37,13 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .banner {
+    width: 820px;
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 835px) {
   .banner {
     max-width: 730px;

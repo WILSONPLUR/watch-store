@@ -87,6 +87,12 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .container {
+    width: 820px;
+  }
+}
+
 @media (max-width: 835px) {
   .container {
     display: flex;
@@ -106,19 +112,6 @@
 
   .controlBtn {
     display: none;
-  }
-
-  .chart {
-    width: 851px;
-    height: 751px;
-  }
-}
-@media (max-width: 420px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    width: 100%;
   }
 
   .chart {

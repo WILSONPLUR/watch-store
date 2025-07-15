@@ -45,6 +45,12 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .indicatorsContainer {
+    width: 820px;
+  }
+}
+
 @media (max-width: 835px) {
   .indicatorsContainer {
     align-items: center;

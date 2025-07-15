@@ -74,6 +74,27 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .watch {
+    position: relative;
+    min-height: 450px;
+  }
+  .watchContent {
+    max-width: 850px;
+    padding-top: 50px;
+    height: 100%;
+  }
+
+  .watchImg {
+    height: 350px;
+    width: 360px;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 835px) {
   .watch {
     display: flex;
