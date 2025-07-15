@@ -48,6 +48,12 @@
   color: var(--black);
 }
 
+@media (max-width: 1000px) {
+  .aboutContainer {
+    max-width: 850px;
+  }
+}
+
 @media (max-width: 835px) {
   .about {
     min-height: 310px;

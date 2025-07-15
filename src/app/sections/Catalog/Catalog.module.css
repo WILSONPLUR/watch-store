@@ -74,6 +74,15 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .catalogContainer {
+    width: 850px;
+  }
+  .catalogCards {
+    max-width: 850px;
+  }
+}
+
 @media (max-width: 835px) {
   .catalogContainer {
     max-width: 100%;
