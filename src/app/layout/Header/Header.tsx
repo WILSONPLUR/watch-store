@@ -42,7 +42,7 @@ export const Header = () => {
           </nav>
           <nav>
             <Link
-              href="/contacts"
+              href="#contacts"
               className={styles.headerLink}
               prefetch={false}
             >
@@ -91,7 +91,7 @@ export const Header = () => {
               </nav>
               <nav>
                 <Link
-                  href="/contacts"
+                  href="#contacts"
                   className={styles.headerMobileMenuLink}
                   prefetch={false}
                 >

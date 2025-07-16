@@ -14,17 +14,13 @@ export const Footer = () => {
         </nav>
         <div className={styles.footerRightLinks}>
           <nav>
-            <Link
-              href="/about-us"
-              className={styles.footerLink}
-              prefetch={false}
-            >
+            <Link href="#" className={styles.footerLink} prefetch={false}>
               Політика конфедеційності
             </Link>
           </nav>
           <nav>
             <Link
-              href="/catalog"
+              href="tel:+380956156714"
               className={styles.footerLink}
               prefetch={false}
             >
@@ -33,7 +29,7 @@ export const Footer = () => {
           </nav>
           <nav>
             <Link
-              href="/contacts"
+              href="#contacts"
               className={styles.footerLink + " " + styles.footerContactsLink}
               prefetch={false}
             >

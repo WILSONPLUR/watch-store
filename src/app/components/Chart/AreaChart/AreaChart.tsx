@@ -88,7 +88,7 @@ export const CustomAreaChart = ({
         <AreaChart
           data={data}
           margin={{
-            top: 20,
+            top: 80,
             right: 30,
             left: 20,
             bottom: 20,
@@ -110,7 +110,12 @@ export const CustomAreaChart = ({
             tick={{ fontSize: 12, fill: "#666" }}
             tickFormatter={(value) => value.toLocaleString()}
           />
-          <Tooltip content={<CustomTooltip />} />
+          <Tooltip
+            content={<CustomTooltip />}
+            cursor={{ stroke: "#333", strokeWidth: 1, strokeDasharray: "5,5" }}
+            isAnimationActive={false}
+            offset={-60}
+          />
           <Area
             type="monotone"
             dataKey="value"

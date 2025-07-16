@@ -2,7 +2,7 @@
   background-color: #000000;
   width: 483px;
   height: 100vh;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   padding: 2rem 0;
