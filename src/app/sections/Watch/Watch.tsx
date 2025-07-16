@@ -22,7 +22,7 @@ export const Watch = () => {
                 — у кожній деталі.
               </p>
             </div>
-            <Link href="/catalog" prefetch={false}>
+            <Link href="/catalog" prefetch={false} className={styles.watchLink}>
               <Button
                 variant="solid"
                 color="#000"

@@ -1,37 +1,54 @@
 .container {
-  width: 1300px;
-  height: 384px;
-  padding: 24px;
+  width: clamp(320px, 90vw, 1300px);
+  height: clamp(300px, 40vh, 500px);
+  padding: clamp(16px, 2vw, 24px);
   background: #fff;
   border: 5px solid var(--black);
   border-radius: 5px;
   box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .containerControls {
-  width: 1300px;
-  height: 384px;
-  padding: 10px;
+  width: clamp(320px, 90vw, 1300px);
+  height: clamp(350px, 45vh, 550px);
+  padding: clamp(10px, 1.5vw, 16px);
   background: #fff;
   border: 5px solid var(--black);
   border-radius: 5px;
   box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .containerMenu {
-  width: calc(100vw - 580px);
+  width: clamp(280px, calc(100vw - 600px), 1300px);
+}
+
+.chartWrapper {
+  flex: 1;
+  min-height: 200px;
+  width: 100%;
 }
 
 .tooltip {
   background-color: rgba(24, 35, 45, 1);
-  border-radius: 5px;
-  padding: 8px 12px;
+  border-radius: clamp(3px, 0.5vw, 8px);
+  padding: clamp(4px, 1.5vw, 12px) clamp(6px, 2vw, 16px);
   color: var(--white);
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: clamp(10px, 2.5vw, 18px);
   position: relative;
   pointer-events: none;
   z-index: 1000;
+  white-space: nowrap;
+  max-width: 90vw;
+  text-align: center;
 }
 
 .tooltip::after {
@@ -42,23 +59,31 @@
   top: 100%;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid rgba(24, 35, 45, 1);
+  border-left: clamp(4px, 1.5vw, 10px) solid transparent;
+  border-right: clamp(4px, 1.5vw, 10px) solid transparent;
+  border-top: clamp(4px, 1.5vw, 10px) solid rgba(24, 35, 45, 1);
 }
 
 .controlButtons {
   display: flex;
-  margin-left: 40px;
-  gap: 10px;
+  margin-left: clamp(5px, 4vw, 50px);
+  gap: clamp(3px, 1.5vw, 15px);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: clamp(5px, 1vw, 10px);
 }
 
 .controlBtn {
-  font-size: 20px !important;
+  font-size: clamp(12px, 2.5vw, 22px) !important;
   font-family: "Inter", sans-serif !important;
   font-weight: 400 !important;
-  padding: 2px 18px !important;
-  border-radius: 5px !important;
+  padding: clamp(4px, 1vw, 8px) clamp(8px, 3vw, 24px) !important;
+  border-radius: clamp(3px, 0.5vw, 8px) !important;
+  white-space: nowrap;
+  min-width: clamp(40px, 8vw, 80px);
+  text-align: center;
+  transition: all 0.2s ease;
 }
 
 .controlBtn:hover {
@@ -68,56 +93,61 @@
 }
 
 .controlBtn:last-child {
-  font-size: 20px !important;
+  font-size: clamp(12px, 2.5vw, 22px) !important;
   font-family: "Inter", sans-serif !important;
   font-weight: 400 !important;
   background-color: var(--white) !important;
   color: var(--black) !important;
-  padding: 0 15px !important;
-  outline: 1px solid var(--black) !important;
+  padding: clamp(4px, 1vw, 8px) clamp(8px, 3vw, 24px) !important;
+  outline: clamp(1px, 0.1vw, 2px) solid var(--black) !important;
+  min-width: clamp(40px, 8vw, 80px);
+  text-align: center;
+  transition: all 0.2s ease;
 }
 
 .controlBtn:last-child:hover {
   background-color: var(--white) !important;
   color: var(--black) !important;
-  outline: 1px solid var(--black) !important;
+  outline: clamp(1px, 0.1vw, 2px) solid var(--black) !important;
 }
 
-@media (max-width: 1920px) {
+/* Chart responsive wrapper */
+.chart {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: clamp(200px, 20vh, 300px);
+}
+
+/* Ultra-responsive container menu adjustments */
+/* @media (orientation: portrait) {
   .containerMenu {
-    width: calc(100vw - 850px);
+    width: clamp(280px, 98vw, 1300px);
+  }
+  
+  .controlButtons {
+    justify-content: center;
+    margin-left: 0;
+  }
+} */
+
+@media (orientation: landscape) and (max-height: 600px) {
+  .container,
+  .containerControls {
+    height: clamp(200px, 80vh, 400px);
   }
 }
 
 @media (max-width: 1000px) {
-  .container {
-    width: 820px;
-  }
+  /* .container {
+    margin: unset;
+  } */
 }
-
-@media (max-width: 835px) {
-  .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 760px;
-    padding: 5px 5px;
-  }
-}
-@media (max-width: 420px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    width: 100%;
-  }
-
-  .controlBtn {
+@media (max-width: 480px) {
+  .controlButtons {
     display: none;
   }
 
-  .chart {
-    width: 851px;
-    height: 751px;
+  .containerControls {
+    padding: clamp(4px, 1vw, 8px);
   }
 }

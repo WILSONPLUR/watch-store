@@ -6,7 +6,7 @@ import {
   DocDark,
   DocsDark,
   SessionDark,
-} from "../../../public/icons";
+} from "../../../../public/icons";
 
 interface Product {
   id: string;
