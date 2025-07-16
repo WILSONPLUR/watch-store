@@ -33,7 +33,7 @@ export const Footer = () => {
           </nav>
           <nav>
             <Link
-              href="/contacts"
+              href="#contacts"
               className={styles.footerLink + " " + styles.footerContactsLink}
               prefetch={false}
             >

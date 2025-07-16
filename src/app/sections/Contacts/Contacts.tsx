@@ -7,7 +7,7 @@ import { MainContext } from "@/app/context";
 export const Contacts = () => {
   const { menuOpened } = useContext(MainContext);
   return (
-    <section className={styles.contacts}>
+    <section className={styles.contacts} id="contacts">
       <div className={styles.contactsContent}>
         <div className={styles.contactsText}>
           <h2 className={styles.contactsTitle}>
