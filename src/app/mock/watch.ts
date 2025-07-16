@@ -51,4 +51,18 @@ export const mockData: IWatch[] = [
     slug: "/rolex-submariner-7",
     id: 7,
   },
+  {
+    title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
+    image: MockWatch.src,
+    price: "19 500",
+    slug: "/rolex-submariner-7",
+    id: 8,
+  },
+  {
+    title: "Rolex Submariner Oyster Perpetual Date 41mm 126610LV-0002",
+    image: MockWatch.src,
+    price: "19 500",
+    slug: "/rolex-submariner-7",
+    id: 9,
+  },
 ];
