@@ -30,6 +30,8 @@
   font-family: "Inter", sans-serif;
   font-size: 16px;
   position: relative;
+  pointer-events: none;
+  z-index: 1000;
 }
 
 .tooltip::after {
