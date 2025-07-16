@@ -88,10 +88,10 @@ export const CustomAreaChart = ({
         <AreaChart
           data={data}
           margin={{
-            top: 60,
-            right: 20,
-            left: 40,
-            bottom: 10,
+            top: 80,
+            right: 30,
+            left: 20,
+            bottom: 20,
           }}
           className={styles.chart}
         >

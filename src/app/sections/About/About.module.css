@@ -11,8 +11,8 @@
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
-  max-width: clamp(320px, 90vw, 1300px);
-  padding: 0 clamp(20px, 3vw, 40px);
+  max-width: clamp(320px, 85vw, 1300px);
+  /* padding: 0 clamp(20px, 3vw, 40px); */
 }
 
 .aboutText {
@@ -36,7 +36,7 @@
   width: clamp(60%, 60vw, 60%);
   position: absolute;
   right: 0;
-  top: 20%;
+  top: 23%;
 }
 
 .aboutHeading {
