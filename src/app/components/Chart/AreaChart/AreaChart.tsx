@@ -43,10 +43,9 @@ type CustomTooltipProps = {
     [key: string]: unknown;
   }>;
   label?: string;
-  coordinate?: { x: number; y: number };
 };
 
-const CustomTooltip = ({ active, payload, label, coordinate }: CustomTooltipProps) => {
+const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
   if (active && payload && payload.length) {
     return (
       <div className={styles.tooltip}>
@@ -111,9 +110,9 @@ export const CustomAreaChart = ({
             tick={{ fontSize: 12, fill: "#666" }}
             tickFormatter={(value) => value.toLocaleString()}
           />
-          <Tooltip 
-            content={<CustomTooltip />} 
-            cursor={{ stroke: '#333', strokeWidth: 1, strokeDasharray: '5,5' }}
+          <Tooltip
+            content={<CustomTooltip />}
+            cursor={{ stroke: "#333", strokeWidth: 1, strokeDasharray: "5,5" }}
             isAnimationActive={false}
             offset={-60}
           />
