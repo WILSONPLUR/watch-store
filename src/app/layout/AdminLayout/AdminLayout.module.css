@@ -13,7 +13,6 @@
 .mainContent {
   flex: 1;
   margin-left: 0; /* Same as sidebar width */
-  padding: 2rem;
   min-height: calc(100vh - 160px); /* Adjust for header/footer height */
   overflow-y: auto;
 }
