@@ -15,7 +15,7 @@ export const Footer = () => {
         <div className={styles.footerRightLinks}>
           <nav>
             <Link href="#" className={styles.footerLink} prefetch={false}>
-              Політика конфедеційності
+              Політика конфіденційності
             </Link>
           </nav>
           <nav>
