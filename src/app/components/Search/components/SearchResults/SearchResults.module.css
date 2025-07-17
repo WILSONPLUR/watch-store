@@ -32,6 +32,13 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .searchResults {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 420px) {
   .searchResults {
     width: 100%;

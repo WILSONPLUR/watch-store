@@ -81,9 +81,28 @@
 }
 
 @media (max-width: 1300px) {
+  .search {
+    margin: unset;
+    align-items: flex-start;
+    width: 100%;
+  }
   .catalogSearch {
-    width: 82%;
-    margin: 30px auto;
+    width: 95%;
+    margin: unset;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .catalogSearch {
+    width: 84%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1130px) {
+  .catalogSearch {
+    width: 80%;
   }
 }
 

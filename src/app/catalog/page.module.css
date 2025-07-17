@@ -68,6 +68,23 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .catalogText {
+    align-items: center;
+    width: 84%;
+  }
+  .catalogTitle {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+  .catalogSubtitle {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1130px) {
+}
+
 @media (max-width: 835px) {
 }
 @media (max-width: 420px) {

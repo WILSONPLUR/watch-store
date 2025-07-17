@@ -88,6 +88,19 @@
 }
 
 /* Modern responsive adjustments */
+@media (max-width: 1300px) {
+  .card {
+    width: 31%;
+    height: max-content;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 300px;
+  }
+}
+
 @media (max-width: 835px) {
   .card {
     max-width: 100%;
