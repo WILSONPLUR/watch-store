@@ -10,11 +10,11 @@ import {
   Tooltip,
 } from "recharts";
 import styles from "./AreaChart.module.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { MainContext } from "@/app/context";
 import { Button } from "../../Button/Button";
 
-const data = [
+const yearData = [
   { date: "01/01/2020", value: 1200 },
   { date: "15/01/2020", value: 1350 },
   { date: "01/02/2020", value: 1450 },
@@ -33,6 +33,18 @@ const data = [
   { date: "15/08/2020", value: 3300 },
   { date: "01/09/2020", value: 3600 },
   { date: "15/09/2020", value: 3400 },
+];
+
+const threeMonthData = [
+  { date: "20/01/2020", value: 1200 },
+  { date: "20/02/2020", value: 1000 },
+  { date: "20/03/2020", value: 1600 },
+  { date: "23/03/2020", value: 1600 },
+  { date: "27/03/2020", value: 1200 },
+  { date: "26/03/2020", value: 1100 },
+  { date: "28/03/2020", value: 1540 },
+  { date: "29/03/2020", value: 1320 },
+  { date: "30/03/2020", value: 4000 },
 ];
 
 type CustomTooltipProps = {
@@ -64,6 +76,10 @@ export const CustomAreaChart = ({
   controls?: boolean;
 }) => {
   const { menuOpened } = useContext(MainContext);
+  const [view, setView] = useState("year");
+  const changeView = () => {
+    setView(view === "year" ? "month" : "year");
+  };
   return (
     <div
       className={
@@ -76,17 +92,29 @@ export const CustomAreaChart = ({
     >
       {controls && (
         <div className={styles.controlButtons}>
-          <Button variant="solid" classNames={styles.controlBtn}>
+          <Button
+            variant="solid"
+            classNames={
+              view === "year" ? styles.controlBtnActive : styles.controlBtn
+            }
+            onClick={changeView}
+          >
             1 рік
           </Button>
-          <Button variant="solid" classNames={styles.controlBtn}>
+          <Button
+            variant="solid"
+            classNames={
+              view === "month" ? styles.controlBtnActive : styles.controlBtn
+            }
+            onClick={changeView}
+          >
             3 міс.
           </Button>
         </div>
       )}
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
-          data={data}
+          data={view === "year" ? yearData : threeMonthData}
           margin={{
             top: 80,
             right: 30,
