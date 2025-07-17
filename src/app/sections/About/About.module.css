@@ -1,7 +1,8 @@
 .about {
+  position: relative;
   background-color: var(--white);
-  min-height: 430px;
-  padding: 60px 0;
+  min-height: clamp(300px, 40vh, 600px);
+  padding: clamp(40px, 8vw, 80px) 0;
 }
 
 .aboutContainer {
@@ -10,7 +11,8 @@
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: clamp(320px, 85vw, 1300px);
+  /* padding: 0 clamp(20px, 3vw, 40px); */
 }
 
 .aboutText {
@@ -18,7 +20,8 @@
   flex-direction: column;
   align-items: flex-start;
   color: var(--black);
-  gap: 8px;
+  gap: clamp(12px, 2vw, 20px);
+  width: 100%;
 }
 
 .aboutHeadingWrapper {
@@ -26,108 +29,72 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: clamp(20px, 3vw, 30px);
 }
 
 .aboutLine {
-  width: 60%;
+  width: clamp(60%, 60vw, 60%);
   position: absolute;
   right: 0;
+  top: 23%;
 }
 
 .aboutHeading {
-  font-size: 40px;
+  font-size: clamp(28px, 5vw, 48px);
   font-weight: 400;
   color: var(--black);
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .aboutDescription {
-  font-size: 20px;
+  font-size: clamp(16px, 2.5vw, 20px);
   font-weight: 400;
   font-family: "Inter", sans-serif;
-  max-width: 820px;
+  max-width: clamp(300px, 70vw, 820px);
   color: var(--black);
-}
-
-@media (max-width: 1000px) {
-  .aboutContainer {
-    max-width: 850px;
-  }
+  line-height: 1.5;
 }
 
 @media (max-width: 835px) {
-  .about {
-    min-height: 310px;
-  }
-  .aboutContainer {
-    max-width: 100%;
-    padding: 0 30px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .aboutLine {
-    right: 0;
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  .aboutText {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 20px;
-  }
-  .aboutHeading {
-    /* margin-top: 40px; */
-    font-size: 40px;
-  }
-
-  .aboutDescription {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .aboutLine {
-    width: calc(100vw - 200px);
-  }
-}
-
-@media (max-width: 420px) {
-  .about {
-    min-height: 310px;
-  }
-  .aboutContainer {
-    max-width: 100%;
-    margin: 0 auto;
-    align-items: center;
-  }
   .aboutHeadingWrapper {
     flex-direction: column;
     align-items: center;
+    margin-bottom: clamp(10px, 2vw, 20px);
   }
 
   .aboutLine {
-    left: 0;
-    right: 0;
-    width: 286px;
-    margin: 0 auto;
+    width: 80%;
+    top: 60%;
   }
 
   .aboutText {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    gap: clamp(10px, 2vw, 15px);
   }
 
   .aboutHeading {
-    margin-top: 20px;
-    font-size: 32px;
+    margin-top: clamp(10px, 2vw, 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    min-height: clamp(240px, 50vh, 450px);
+  }
+
+  .aboutContainer {
+    padding: 0 clamp(15px, 5vw, 20px);
+  }
+
+  .aboutLine {
+    width: 90%;
+    top: 70%;
   }
 
   .aboutDescription {
-    font-size: 16px;
-    max-width: 323px;
+    font-size: clamp(14px, 3vw, 18px);
+    max-width: 100%;
   }
 }

@@ -16,6 +16,11 @@ export const Search = ({
 }: ISearchProps) => {
   const [searchVal, setSearchVal] = useState("");
   const [searchResults, setSearchResults] = useState<IWatch[]>(mockData);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [limit, setLimit] = useState({
+    min: 0,
+    max: 6,
+  });
   const [opened, setOpened] = useState(false);
   const { menuOpened } = useContext(MainContext);
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -105,9 +110,20 @@ export const Search = ({
           />
         </div>
       )}
-      <SearchResults items={searchResults} />
+      <SearchResults items={searchResults.slice(limit.min, limit.max)} />
       {searchResults.length > 0 && (
-        <Navigation totalPages={3} initialPage={1} />
+        <Navigation
+          totalPages={3}
+          initialPage={currentPage}
+          onPageChange={(page) => {
+            setLimit((prev) => ({
+              ...prev,
+              min: (page - 1) * 6,
+              max: page * 6,
+            }));
+            setCurrentPage(page);
+          }}
+        />
       )}
     </div>
   );

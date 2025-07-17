@@ -16,7 +16,7 @@ interface IMainContext {
 interface IWatch {
   title: string;
   image: string;
-  price: number;
+  price: number | string;
   slug: string;
   id: number;
 }

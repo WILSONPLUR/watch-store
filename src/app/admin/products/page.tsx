@@ -1,6 +1,6 @@
 import { AdminLayout } from "@/app/layout/AdminLayout/AdminLayout";
 import styles from "../admin.module.css";
-import { ProductsTable } from "@/components/ProductsTable/ProductsTable";
+import { ProductsTable } from "@/app/components/ProductsTable/ProductsTable";
 
 export default function AdminProducts() {
   return (
