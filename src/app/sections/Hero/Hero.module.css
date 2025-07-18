@@ -160,6 +160,9 @@
     width: 100%;
     max-width: 300px;
   }
+  .heroTitle {
+    font-size: 32px;
+  }
 }
 
 /* Landscape mobile optimization */
