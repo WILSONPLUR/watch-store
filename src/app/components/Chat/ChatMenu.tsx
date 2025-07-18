@@ -1,5 +1,5 @@
 "use client";
-import React, { RefObject, useContext, useRef } from "react";
+import React, { RefObject, useContext, useRef, useState, useEffect } from "react";
 import { Close, Robot } from "../../../../public/icons";
 import styles from "./ChatMenu.module.css";
 import { Button } from "../Button/Button";
@@ -9,16 +9,30 @@ import Link from "next/link";
 
 export const ChatMenu = () => {
   const { setMenuOpened } = useContext(MainContext);
+  const [isAnimating, setIsAnimating] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
+  
   useClickOutside(ref as RefObject<HTMLDivElement>, () => {
-    setMenuOpened(false);
+    closeMenu();
   });
 
+  useEffect(() => {
+    // Start animation when component mounts
+    setIsAnimating(true);
+  }, []);
+
   const closeMenu = () => {
-    setMenuOpened(false);
+    setIsAnimating(false);
+    setTimeout(() => {
+      setMenuOpened(false);
+    }, 300); // Wait for animation to complete
   };
+  
   return (
-    <div className={styles.chatMenu} ref={ref}>
+    <div 
+      className={`${styles.chatMenu} ${isAnimating ? styles.open : ''}`} 
+      ref={ref}
+    >
       <button className={styles.chatMenuClose} onClick={closeMenu}>
         <img
           src={Close.src}
