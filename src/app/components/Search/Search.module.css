@@ -100,19 +100,49 @@
   }
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1150px) {
   .catalogSearch {
-    width: 80%;
+    width: 82%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .catalogSearch {
+    width: 77%;
+    margin: 0 80px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .catalogSearch {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .catalogSearch {
+    width: 66%;
+    margin: 0 80px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .catalogSearch {
+    width: 66%;
+    margin: 0 40px;
   }
 }
 
 @media (max-width: 420px) {
   .search {
     width: 100%;
+    align-items: center;
   }
 
   .catalogSearch {
     justify-content: flex-start;
+    width: 100%;
     gap: 10px;
     margin: 0;
   }
