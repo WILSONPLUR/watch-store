@@ -26,23 +26,19 @@
   cursor: pointer;
 }
 
-@media (max-width: 835px) {
+@media (max-width: 834px) {
   .chatButton {
     width: 100px;
     right: -20px;
   }
-}
-
-@media (max-width: 420px) {
   .chatWrapper {
     background-color: transparent;
     box-shadow: unset;
     width: 0;
   }
-
+}
+@media (max-width: 768px) {
   .chatButton {
-    width: 100px;
-    right: -20px;
     top: 75%;
   }
 }
